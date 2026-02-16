@@ -1,0 +1,5 @@
+--Log Begin--
+Begin main
+In func 1
+In func 2
+End main

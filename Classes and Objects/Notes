@@ -1,0 +1,34 @@
+"""
+Class:
+is a programmer defined daata type that 
+allows you to break up your program into more manageable pieces. 
+Classes are made up of attributes that store information about the 
+object (the things the object has), and methods to access or alter 
+the objects data (the things the object does).  A class acts as a 
+sort of template that allows you to create one or more objects from it.
+It also allows you to write code that can easily be reused for multiple
+programs.
+"""
+
+"""
+Classes are particularly useful in larger projects, especially when
+the project needs to be updated or maintained often. Classes allow for
+ENCAPSULATION, ABSTRACTION, COHESION, EXTENSION and REUSE.
+"""
+
+"""
+Object:
+is an instance of a class. Objects are created in your program
+and rea manipulated by using the objects's methods, which are defined
+inside of a class. These methods can access and change the object's attributes
+"""
+
+"""
+Self:
+represents the instance of the class (the current object) that the method is
+being called on. It is used to specify that this method is called on objects,
+and it allows you to access the class's attributes. it is always the first
+parameter in an instance method, and while it is not required that it be named
+'self', it is recommended, since that is what other programmers will recognize it as.
+"""
+

@@ -1,0 +1,28 @@
+Testing:
+    the process of checking software to make sure that your code is working correctly. Tests are written so that they always perform the same checks, that way when a part of your code is updated, the tests can quickly and easily be re-run to verify that the code still works correctly.  It may seem tedious to have to write so many tests to make sure that each part of your code works, but in the long run, especially for larger projects, it is a lot more work to have to do tests by running and checking the program yourself (plus it’s much more likely that you’ll miss something).  Also, keep in mind that even if all your tests come back as correct, it doesn’t mean that your code is bug free, it just means that you missed that test.
+
+    Unit Tests:
+        are small, fast, automated tests that are performed on small chunks of code (units), to ensure that your code is correct or check that it did what it was supposed to do.  Unit tests are repeatable and reliable because they are executed the same way each time they are run.
+
+    PyUnit:
+        A common framworks for unit testing.
+        To use it, you import the -unittest- module.  Your tests are then created as methods in a subclass of the -TestCase- class and each method should begin with the word -‘test’-.  Then you place assert methods in those methods to validate your code.
+
+    Assert Methods:
+        are functions that are used to check that your code’s values are correct and report an error if they are not correct.  The following are the more commonly used assert methods (note: there is an optional error message parameter for asserts, they default to None)
+
+    Testing Strategy:
+        (AAA) method:
+            AAA helps standardize your unit tests so they all have the same structure which makes them easier to write and easier to read.  Also make sure that each of your tests are independent, results from a previous test shouldn’t have any effect on subsequent tests. 
+            
+            Arrange:
+                Create all objects and variables needed to do the test.
+            Act:
+                Call the method that needs to be tested.
+            Assert:
+                Verify the result with an assert statement.
+
+Debugging:
+    is the process of stepping through your code one statement at a time, while watching for updates to your values and seeing which path your code takes to try to discover what could be going wrong with your code.  Debugging is useful because it helps you visualize what’s going on in your code, and what you think is happening in your code can be wildly different from what is actually happening.  Most IDEs come with their own debugger and have at least the most basic features such as breakpoints and steppers.
+
+    

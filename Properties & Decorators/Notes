@@ -1,0 +1,14 @@
+Properties [EX_1]:
+    are for when you want to make a method appear as an attribute.  Most classes have one or more attributes that can be accessed using the object from outside of the class.  Since attributes represent the state of the object, there may be times that an invalid value for one of these attributes would cause the object to no longer work properly.  In these cases, it is useful protect your object by hiding the attributes and adding methods to validate these values before being assigned to the attribute.  Properties allow you to do this without forcing the user of your class to call the validation method, instead it will just appear as though they’re accessing the attribute directly, allowing you to keep your object’s interface simple.
+
+Access Control [EX_2]:
+    Python doesn’t have a form of public, protected, or private access control like other languages do.  Instead, you should think of it as more public vs. non-public, in that it prefers to allow everything to be accessible as needed, while suggesting a set of guidelines whether something should or shouldn’t be accessed from outside of its class.  It gives the responsibility of access to the programmer using the classes, rather than the programmer that created the classes.  Python’s convention of suggesting access control is:
+
+        1. An attribute or a method prefixed with a single underscore suggests that it is internal to the class and shouldn’t be directly accessed from outside of the class using the object.  Subclasses are usually acceptable if there isn't another way of accessing the attribute.
+
+        2. An attribute or a method prefixed with a double-underscore (dunder) strongly suggests that it is internal to the class and shouldn’t be directly accessed from outside of the class using the object.  Python restricts direct access to the item using name mangling, but the item is still accessible through other means.  It is used to ensure that a subclass does not accidentally override the attribute.
+
+        3. An attribute or method without an underscore suggests that it is public facing and may be accessed from outside of the class (be cautious when accessing public attributes directly, as it may sometimes cause unknown side effects.  Use the methods as much as possible to avoid accessing them directly).
+
+Python’s property() [EX_3]:
+    is a function that will allow you to specify which get and set methods should be called when the attribute is accessed using the object outside of the class.  That way, from the outside, it appears as though the attribute is publicly accessible, but in reality, the access is being routed through the get or set methods so that the value can be properly checked.  To do this, your class needs to call the property method and specify the attribute and the corresponding get and set methods that should be used.

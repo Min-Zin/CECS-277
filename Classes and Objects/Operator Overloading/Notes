@@ -1,0 +1,40 @@
+Class Design:
+    When designing a new program, you can start with this basic set of steps and then expand as needed.  Program design is often an iterative process that may need to be repeated to fully capture the design.
+
+    1. Write a full description of what you want your program to do.  Be as complete as you can and include as many details as possible (but remember, you’ll probably come back to this step as you think of more things to include).
+
+    2. Look through your description, usually items that are nouns or objects will become the classes in your program.
+
+    3. Make a list of the classes you decide to create.  For each class, create a table and list all the things your object ‘has’ and all the things your object ‘does’ (usually things in the ‘has’ column become attributes and things in the ‘does’ column become methods).
+
+    4. Expand on your class as needed, but remember to try to keep it cohesive and generic as possible so that your class can be reused in future programs.
+
+Operator Overloading:
+    We can add the ability for our objects to be used with operators.  If we want to compare two objects, or subtract two objects, we need to define how that should happen.
+
+    Relational Operators:
+        __lt__ (self, other) = '<'
+        __le__ (self, other) = '<='
+        __gt__ (self, other) = '>'
+        __ge__ (self, other) = '>='
+        __eq__ (self, other) = '=='
+        __ne__ (self, other) = '!='
+
+    Mathematical Operators:
+        __add__ (self, other) = '+'
+        __sub__ (self, other) = '-'
+        __mul__ (self, other) = '*'
+        __truediv__ (self, other) = '/'
+        __floordiv__ (self, other) = '//'
+        __mod__ (self, other) = '%'
+        __pow__ (self, other) = '**'
+
+    Other Operators:
+        __getitem__ (self, index) = 'items[index]'
+        __len__ (self) = 'len()'
+        __int__ (self) = 'int()'
+        __float__ (self) = 'float()'
+        __str__ (self) = 'str()'
+        __repr__ (self) = 'repr()'
+
+    
